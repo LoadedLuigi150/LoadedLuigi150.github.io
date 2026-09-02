@@ -35,9 +35,6 @@ document.addEventListener('keydown', function (e) {
     else if (e.key == 'd') {
         speedX = 1;
     }
-    posX += speedX;
-    posY += speedY;
-    player.style.transform = 'translate('+ posX +'px, '+ posY +'px)';
 })
 document.addEventListener('keyup', function(e) {
     if (e.key == 'a' || e.key == 'd') {
@@ -47,3 +44,9 @@ document.addEventListener('keyup', function(e) {
         speedY = 0;
     }
 })
+
+const interval = setInterval(() => {
+    posX += speedX;
+    posY += speedY;
+    player.style.transform = 'translate('+ posX +'px, '+ posY +'px)';
+},10)
