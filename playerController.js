@@ -20,7 +20,7 @@ let posX = 0;
 let posY = 0;
 
 //controller
-document.addEventListner('keydown', function (e) {
+document.addEventListener('keydown', function (e) {
     if (e.key == 'w') {
         posY -= speed;
     }    
