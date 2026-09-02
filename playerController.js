@@ -15,23 +15,35 @@ player.appendChild(playerImg);
 document.body.appendChild(player);
 
 //declar variables
-let speed = 1;
+let speedX = 0;
+let speedY = 0;
 let posX = 0;
 let posY = 0;
+let direction = 'n';
 
 //controller
 document.addEventListener('keydown', function (e) {
     if (e.key == 'w') {
-        posY -= speed;
+        speedY = -1;
     }    
     else if (e.key == 's') {
-        posY += speed;
+        speedY = 1;
     }    
     else if (e.key == 'a') {
-        posY -= speed;
+        speedX = -1;
     }    
     else if (e.key == 'd') {
-        posY += speed;
+        speedX = 1;
     }
+    posX += speedX;
+    posY += speedY;
     player.style.transform = 'translate('+ posX +'px, '+ posY +'px)';
 })
+document.addEventListener('keyup', function(e) {
+    if (e.key == 'a' || e.key == 'd') {
+        speedX = 0;
+    }
+    if (e.key == 'w' || e.key == 's') {
+        speedY = 0;
+    }
+}
