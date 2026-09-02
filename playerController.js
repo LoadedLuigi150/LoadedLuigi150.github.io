@@ -7,8 +7,8 @@ player.style.position = 'absolute';
 player.style.zIndex = '1000';
 player.style.left = '50%';
 player.style.top = '50%';
-playerImg.style.width = '50px';
-playerImg.style.height = '50px';
+playerImg.style.width = player.style.width;
+playerImg.style.height = player.style.height;
 playerImg.style.backgroundColor = 'red';
 
 player.appendChild(playerImg);
