@@ -29,7 +29,7 @@ document.addEventListener('keydown', function (e) {
     else if (e.key == 's') {
         speedY = 1;
     }    
-    else if (e.key == 'a') {
+    sif (e.key == 'a') {
         speedX = -1;
     }    
     else if (e.key == 'd') {
@@ -46,4 +46,4 @@ document.addEventListener('keyup', function(e) {
     if (e.key == 'w' || e.key == 's') {
         speedY = 0;
     }
-}
+})
