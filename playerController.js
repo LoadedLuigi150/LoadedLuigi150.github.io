@@ -29,7 +29,7 @@ document.addEventListener('keydown', function (e) {
     else if (e.key == 's') {
         speedY = 1;
     }    
-    sif (e.key == 'a') {
+    if (e.key == 'a') {
         speedX = -1;
     }    
     else if (e.key == 'd') {
