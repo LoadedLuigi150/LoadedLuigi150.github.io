@@ -1,18 +1,5 @@
 //player creation
-const player = document.createElement('div');
-const playerImg = document.createElement('img');
-player.style.width = '50px';
-player.style.height = '100px';
-player.style.position = 'absolute';
-player.style.zIndex = '1000';
-player.style.left = '50%';
-player.style.top = '50%';
-playerImg.style.width = player.style.width;
-playerImg.style.height = player.style.height;
-playerImg.style.backgroundColor = 'red';
-
-player.appendChild(playerImg);
-document.body.appendChild(player);
+const player = document.getElementById('player');
 
 //declar variables
 let speed = 3;
