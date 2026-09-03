@@ -1,5 +1,5 @@
 //player creation
-const player = document.getElementById('player');
+const player = document.body.getElementById('player');
 
 //declar variables
 let speed = 3;
