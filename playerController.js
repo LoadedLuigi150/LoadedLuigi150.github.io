@@ -1,13 +1,13 @@
 //player creation
 const player = document.createElement('div');
 const playerImg = document.createElement('img');
-player.style.width = '160px';
-player.style.height = '320px';
+player.style.width = '40px';
+player.style.height = '106.6px';
 player.style.position = 'absolute';
 player.style.zIndex = 1000;
 playerImg.style.width = '160px';
-playerImg.style.height = '160px';
-playerImg.style.imageRendering = 'pixalated';
+playerImg.style.height = '320px';
+playerImg.style.imageRendering = 'auto';
 player.style.content = 'contain';
 playerImg.src = 'StacyWalkAnimaton.png';
 
