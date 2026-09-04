@@ -1,7 +1,18 @@
 //player creation
-const player = document.body.getElementById('player');
+const player = document.createElement('div');
+const playerImg = document.createElement('img');
+player.style.width = '160px';
+player.style.height = '320px';
+player.style.position = 'absolute';
+player.style.zIndex = 1000;
+playerImg.style.width = '160px';
+playerImg.style.height = '160px';
+playerImg.src = 'StacyWalkAnimaton.png';
 
-//declar variables
+player.appendChild(playerImg);
+document.body.appendChild(player);
+
+//declare variables
 let speed = 3;
 let speedX = 0;
 let speedY = 0;
