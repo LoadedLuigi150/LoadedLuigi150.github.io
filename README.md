@@ -1,0 +1,1 @@
+This project is for the NEHS School TNTSA competitions for video games. If you or anyone has access he or she or them or anyone in the LGBTQ+ community or people who identify as a Airbus A-203 is a friend or aquantice or family member or people who are judges and/or competitors in the NEHS challenge 
