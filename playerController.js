@@ -72,7 +72,7 @@ const interval = setInterval(() => {
         frame += 1;
     }
     l++
-    if (frame > 4) {
+    if (frame > 3) {
         frame = 0;
     }
     console.log('frame = ' + frame + ' colum = '+ lastcolum)
