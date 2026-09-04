@@ -4,6 +4,6 @@ background.style.height = '680px';
 background.style.position = 'absolute';
 background.src = 'Background.png';
 
-background.style.transform = 'translateX('+ window.innerWidth - (parseInt(background.style.width)/2) +'px)'
+background.style.transform = 'translateX('+ window.innerWidth +'px)'
 
 document.body.appendChild(background);
