@@ -75,7 +75,7 @@ const interval = setInterval(() => {
     if (frame > 4) {
         frame = 0;
     }
-    console.log('frame = ' + frame)
+    console.log('frame = ' + frame + ' colum = '+ lastcolum)
     if (speedX > 0) {
         if (lastcolum == 0 || lastcolum == -1) {
             frame = 0;
