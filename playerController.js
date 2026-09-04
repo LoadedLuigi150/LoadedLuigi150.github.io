@@ -69,7 +69,7 @@ function setFrame(frameNum, animationName) {
 const interval = setInterval(() => {
     if (l > 999) {
         l = 0;
-        frame--;
+        frame++;
     }
     l++
     if (frame > 4) {
