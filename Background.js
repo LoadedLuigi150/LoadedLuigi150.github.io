@@ -6,3 +6,5 @@ background.style.left = '50%';
 background.src = 'Background.png';
 
 background.style.transform = 'translateX('+ window.innerWidth - (parseInt(background.style.width)/2) +'px)'
+
+document.body.appendChild(background);
