@@ -46,8 +46,33 @@ document.addEventListener('keyup', function(e) {
     }
 })
 
+let l = 0;
+
+//setting up animation
+function setFrame(frameNum, animationName) {
+    let colum = 0;
+    if (animationName == 'walkDown') {
+        colum = 0;
+    }
+    if (animationName == 'walkUp') {
+        colum = 1;
+    }
+    if (animationName == 'walkRight') {
+        colum = 2;
+    }
+    playerImg.style.transform = 'translate('+ frameNum * 40 +'px, '+ colum * 106.66 +'px)'
+}
 const interval = setInterval(() => {
     posX += speedX;
     posY += speedY;
     player.style.transform = 'translate('+ posX +'px, '+ posY +'px)';
+    if (speedX > 0) {
+        setFrame(0, 'walkRight')
+    }
+    if (speedY < 0) {
+        setFrame(0, 'walkUp')
+    }
+    if (speedY > 0) {
+        setFrame(0, 'walkDown')
+    }
 },10)
