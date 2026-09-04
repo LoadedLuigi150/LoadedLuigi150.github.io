@@ -63,10 +63,10 @@ function setFrame(frameNum, animationName) {
     if (animationName == 'walkRight') {
         colum = -2;
     }
-    playerImg.style.transform = 'translate('+ frameNum * 40 +'px, '+ colum * 106.66 +'px)';
+    playerImg.style.transform = 'translate('+ frameNum * -40 +'px, '+ colum * 106.66 +'px)';
 }
 const interval = setInterval(() => {
-    if (l > 99) {
+    if (l > 49) {
         l = 0;
         frame += 1;
     }
