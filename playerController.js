@@ -64,7 +64,6 @@ function setFrame(frameNum, animationName) {
         colum = -2;
     }
     playerImg.style.transform = 'translate('+ frameNum * -40 +'px, '+ colum * 106.66 +'px)';
-    console.log(frameNum);
 }
 const interval = setInterval(() => {
     if (l > 10) {
@@ -75,7 +74,6 @@ const interval = setInterval(() => {
     if (frame > 3) {
         frame = 0;
     }
-    console.log('frame = ' + frame + ' colum = '+ lastcolum)
     if (speedX > 0) {
         if (lastcolum == 0 || lastcolum == -1) {
             frame = 0;
