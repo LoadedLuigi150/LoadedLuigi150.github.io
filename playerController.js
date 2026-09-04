@@ -66,7 +66,7 @@ function setFrame(frameNum, animationName) {
     playerImg.style.transform = 'translate('+ frameNum * 40 +'px, '+ colum * 106.66 +'px)';
 }
 const interval = setInterval(() => {
-    if (l > 999) {
+    if (l > 99) {
         l = 0;
         frame += 1;
     }
