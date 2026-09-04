@@ -67,10 +67,13 @@ function setFrame(frameNum, animationName) {
     return colum
 }
 const interval = setInterval(() => {
-    l++;
-    if (l > 99) {
+    if (l > 999) {
         l = 0;
         frame++;
+    }
+    l++
+    if (frame > 4) {
+        frame = 0;
     }
     if (speedX > 0) {
         if (lastcolum == 0 || lastcolum == -1) {
