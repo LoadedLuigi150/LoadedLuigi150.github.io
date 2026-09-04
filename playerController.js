@@ -48,6 +48,8 @@ document.addEventListener('keyup', function(e) {
 
 let l = 0;
 let deg = 0;
+let frame = 0;
+let lastcolum = 0;
 
 //setting up animation
 function setFrame(frameNum, animationName) {
@@ -62,21 +64,42 @@ function setFrame(frameNum, animationName) {
         colum = -2;
     }
     playerImg.style.transform = 'translate('+ frameNum * 40 +'px, '+ colum * 106.66 +'px)'
+    return colum
 }
 const interval = setInterval(() => {
+    if (l > 99) {
+        l = 0;
+        frame++;
+    }
     if (speedX > 0) {
-        setFrame(0, 'walkRight')
+        if (lastcolum == 0 || lastcolum == -1) {
+            frame = 0;
+        }
+        setFrame(frame, 'walkRight')
         deg = 0;
+        lastcolum = -2;
     }
     if (speedY < 0) {
-        setFrame(0, 'walkUp')
+        if (lastcolum == 0 || lastcolum == -2) {
+            frame = 0;
+        }
+        setFrame(frame, 'walkUp')
+        lastcolum = -1
     }
     if (speedY > 0) {
-        setFrame(0, 'walkDown')
+        if (lastcolum == -1 || lastcolum == -2) {
+            frame = 0;
+        }
+        setFrame(frame, 'walkDown')
+        lastcolum = 0;
     }
     if (speedX < 0) {
-        setFrame(0, 'walkRight');
+        if (lastcolum == 0 || lastcolum == -1) {
+            frame = 0;
+        }
+        setFrame(frame, 'walkRight');
         deg = 180
+        lastcolum = -2;
     }
     posX += speedX;
     posY += speedY;
