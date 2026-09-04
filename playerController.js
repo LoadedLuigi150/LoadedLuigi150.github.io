@@ -67,7 +67,7 @@ function setFrame(frameNum, animationName) {
     console.log(frameNum);
 }
 const interval = setInterval(() => {
-    if (l > 49) {
+    if (l > 10) {
         l = 0;
         frame += 1;
     }
