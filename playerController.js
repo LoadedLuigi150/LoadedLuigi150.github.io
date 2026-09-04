@@ -80,5 +80,5 @@ const interval = setInterval(() => {
     }
     posX += speedX;
     posY += speedY;
-    player.style.transform = 'translate('+ posX +'px, '+ posY +'px); rotateY('+ deg +'deg)';
+    player.style.transform = 'translate('+ posX +'px, '+ posY +'px) rotateY('+ deg +'deg)';
 },10)
