@@ -4,8 +4,6 @@ background.style.height = '680px';
 background.style.position = 'absolute';
 background.src = 'Background.png';
 
-const interval2 = setInterval(() => {
-    background.style.transform = 'translateX('+ window.innerWidth/2 + (parseInt(background.style.width)/2) +'px)';
-},10)
+background.style.transform = 'translateX('+ window.innerWidth/2 + (parseInt(background.style.width)/2) +'px)';
 
 document.body.appendChild(background);
