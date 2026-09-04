@@ -6,7 +6,7 @@ player.style.height = '320px';
 player.style.position = 'absolute';
 player.style.zIndex = 1000;
 playerImg.style.width = '160px';
-playerImg.style.height = '160px';
+playerImg.style.height = '320px';
 playerImg.src = 'StacyWalkAnimaton.png';
 
 player.appendChild(playerImg);
